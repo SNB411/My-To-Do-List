@@ -11,7 +11,7 @@ body, html{
   grid-template-columns: 1fr;
 }
 body {
-  background-image: url('../Images/first.jpg');
+  background-image: url('../images/wallpaper3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
