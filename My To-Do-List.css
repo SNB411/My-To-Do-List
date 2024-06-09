@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+}
+body, html{
+  font-family: roboto, arial;
+  font-size: 16px;
+  color: rgb(208, 208, 208);
+  padding: 8px 70px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+body {
+  background-image: url('../images/wallpaper3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 95vh;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 400px;
+  font-weight: 500;
+  column-gap: 25px;
+  row-gap: 15px;
+}
+.container2 {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: ease-in 0.15s;
+}
+.container2:hover {
+  transform: scale(1.07);
+}
+.grid1,
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+.grid1{
+  align-items: stretch;
+  margin-bottom: 15px;
+}
+.text-input{
+  font-family: roboto, arial;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  outline-style: none;
+}
+.text-input::placeholder {
+  color: white;
+  font-family: roboto, arial;
+}
+
+.add-button{
+  background-color: transparent;
+  padding: 5px 0px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.delete-Button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 5px 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+button:hover {
+  color: white;
+  background-color: black;
+}
+button:active {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width:699px) {
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width:700px) and (max-width:1000px) {
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:1001px) and (max-width: 1199px) {
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

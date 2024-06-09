@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do-list</title>
+  <link rel="stylesheet" href="Styles/My To-Do-List.css">
+  <!--Roboto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!--Monday-->
+    <div class="container2">Monday
+      <div class="grid1">
+        <input class="Input-Monday text-input" placeholder="New Task" onkeydown="pressEnter(monday, '.div-Monday', '.Input-Monday', 'Monday')">
+        <button class="add-button" onclick="addTask(monday, '.div-Monday', '.Input-Monday', 'Monday')">+</button>
+      </div>
+      <div class="div-Monday grid2"></div>
+    </div>
+    <!--Tuesday-->
+    <div class="container2">Tuesday
+      <div class="grid1">
+        <input class="Input-Tuesday text-input" placeholder="New Task" onkeydown="pressEnter(tuesday, '.div-Tuesday', '.Input-Tuesday', 'Tuesday')">
+        <button class="add-button" onclick="addTask(tuesday, '.div-Tuesday', '.Input-Tuesday', 'Tuesday')">+</button>
+      </div>
+      <div class="div-Tuesday grid2"></div>
+    </div>
+    <!--Wednsday-->
+    <div class="container2">Wednsday
+      <div class="grid1">
+        <input class="Input-Wednsday text-input" placeholder="New Task" onkeydown="pressEnter(wednsday, '.div-Wednsday', '.Input-Wednsday', 'Wednsday')">
+        <button class="add-button" onclick="addTask(wednsday, '.div-Wednsday', '.Input-Wednsday', 'Wednsday')">+</button>
+      </div>
+      <div class="div-Wednsday grid2"></div>
+    </div>
+      <!--Thursday-->
+      <div class="container2">Thursday
+        <div class="grid1">
+          <input class="Input-Thursday text-input" placeholder="New Task" onkeydown="pressEnter(thursday, '.div-Thursday', '.Input-Thursday', 'Thursday')">
+          <button class="add-button" onclick="addTask(thursday, '.div-Thursday', '.Input-Thursday', 'Thursday')">+</button>
+        </div>
+        <div class="div-Thursday grid2"></div>
+      </div>
+      <!--Friday-->
+      <div class="container2">Friday
+        <div class="grid1">
+          <input class="Input-Friday text-input" placeholder="New Task" onkeydown="pressEnter(friday, '.div-Friday', '.Input-Friday', 'Friday')">
+          <button class="add-button" onclick="addTask(friday, '.div-Friday', '.Input-Friday', 'Friday')">+</button>
+        </div>
+        <div class="div-Friday grid2"></div>
+      </div>
+      <!--Saturday-->
+      <div class="container2">Saturday
+        <div class="grid1">
+          <input class="Input-Saturday text-input" placeholder="New Task" onkeydown="pressEnter(saturday, '.div-Saturday', '.Input-Saturday', 'Saturday')">
+          <button class="add-button" onclick="addTask(saturday, '.div-Saturday', '.Input-Saturday', 'Saturday')">+</button>
+        </div>
+        <div class="div-Saturday grid2"></div>
+      </div>
+      <!--Sunday-->
+      <div class="container2">Sunday
+        <div class="grid1">
+          <input class="Input-Sunday text-input" placeholder="New Task" onkeydown="pressEnter(sunday, '.div-Sunday', '.Input-Sunday', 'Sunday')">
+          <button class="add-button" onclick="addTask(sunday, '.div-Sunday', '.Input-Sunday', 'Sunday')">+</button>
+        </div>
+        <div class="div-Sunday grid2"></div>
+      </div>
+  </div>
+
+  <script src="Script/My To-Do-List.js"></script>
+</body>
+</html>
